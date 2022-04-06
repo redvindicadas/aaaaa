@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --dark-color: #191919;
+    --white-color: #fff;
+    --purpple-color: rgb(117,41,149);
+    --blue-color: #00b2b1;
+    --gray-color: #828282;
+    --light-color: #f3f3f3;
+}
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purpple-color);
+}
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/*---------------------------INDEX------------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.b-azul{
+    background: linear-gradient(#00b2b1,#04b8b8);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purpple-color);
+}
+
+.b-azul:hover{
+    background: linear-gradient(#8ce6e6,#00b2b1);
+    transition: all 1s ease 1s;
+    color: var(--purpple-color);
+}
+
+.b-morado{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border-color: var(--purpple-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purpple-color);
+    border-style: solid;
+}
+
+.b-morado:hover{
+    background-color: var(--purpple-color);
+    color: var(--white-color);
+}
+
+.icono{
+    color: var(--purpple-color);
+    margin-right: 0.3rem;
+}
+
+.icono1{
+    color: var(--purpple-color);
+    margin-right: 0.3rem;
+}
+
+nav{
+    display: flex;
+    background-color: var(--purpple-color);
+    position: sticky;
+    top: 0;
+}
+
+.item{
+    padding: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--purpple-color);
+}
+.item:hover{
+    color: rgb(255, 255, 255, 0.4);
+    border-bottom: 2px solid var(--white-color);
+}
+
+#agenda{
+    display: flex;
+    margin-top: 0.4rem;
+    text-align: left;
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image:url(../img/fondo.jpg);
+    margin: 5px;
+    padding-top: 1%;
+}
+
+.cita h1{
+    color: var(--dark-color);
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+}
+
+.cita h3{
+    color: var(--dark-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+}
+
+.promocion{
+    flex-basis: 30%;
+    background-color: var(--purpple-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.promocion h1{
+    color: var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+}
+
+.tseccion{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+#servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+    padding: 15px;
+}
+
+footer{
+    background-image: url(../img/fondo.jpg);
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(117,41,149,0.5);
+}
+
+.foot{
+    text-align: center;
+}
+
+.foot h3{
+    color: var(--white-color);
+}
+
+.foot p{
+    color: var(--white-color);
+}
+
+.foot img{
+    color: var(--white-color);
+}
+
+/*---------------------------EQUIPO------------------------------*/
+
+.banner img{
+    width: 100%;
+}
+
+#equipos{
+    display: flex;
+    justify-content: space-around;
+}
+
+#equipos img{
+    max-width: 200px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.equipo{
+    padding: 1rem;
+    margin: 10px;
+    text-align: center;
+}
+
+#carouselExampleInterval img{
+    width: 100%;
+    height: 700px;
+}
+
+/*---------------------------SERVICIOS------------------------------*/
+
+#services{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.service{
+    width: 47%;
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.img-services{
+    width: 100%;
+}
+
+.img-services img{
+    width: 150px;
+}
+
+.text-services h3{
+    color: var(--dark-color);
+    font-size: 24px;
+}
+
+/*---------------------------CONTACTANOS------------------------------*/
+
+#contact{
+    padding: 2rem;
+}
+
+.mapa iframe{
+    border-radius: 20%;
+}
+
+.tseccion{
+    color: var(--purple-color);
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--gray-color);
+    font-size: 32px;
+}
+
+.tseccion__2{
+    color: var(--purple-color);
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px var(--gray-color);
+    font-size: 32px;
+}
+
+#forms{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.form{
+    width: 70%;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#forms{
+    width: 100%;
+    padding: 20px;
+}
+
+input{
+    background-color: rgb(238, 232, 232);
+    border: none;
+    border-radius: 5px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+/*---------------------------DASHBOARD------------------------------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sesion{
+    text-align: right;
+    color: var(--purpple-color);
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sesion img{
+    max-width: 60px;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--purpple-color);
+}
+
+#dashboard{
+    display: flex;
+}
+
+.menu1{
+    flex-basis: 30%;
+    background-color: var(--dark-color);
+    height: 100vh;
+}
+
+.menu1 ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu1 a{
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu1 a:hover{
+    background-color: var(--purpple-color);
+    border: 3px solid var(--white-color);
+    padding-left: 50px;
+    transition: all 2s;
+    color: var(--dark-color);
+}
+
+.menu1 i{
+    margin: 3px;
+}
+
+
+.contenido{
+    flex-basis: 80%;
+    background-color: var(--light-color);
+    padding: 20px;
+}
+
+
+/*---------------------------PRODUCTO------------------------------*/
+
+.tabla-intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabla-intro img{
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--light-color);
+}
+
+.btn-azul,.btn-morado{
+    padding: 0.5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--light-color);
+    border-radius: 5%;
+}
+
+.btn-azul{
+    background-color: var(--blue-color);
+}
+
+.btn-morado{
+    background-color: var(--purpple-color);
+}
+
+.tabla-intro h1{
+    color: var(--dark-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.frm-busqueda{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.frm-busqueda input[type="text"]{
+    flex-basis: 80%;
+    padding: 10px;
+    border: 2px solid var(--dark-color);
+}
+
+.frm-busqueda button{
+    flex-basis: 20%;
+    margin-left: 20px;
+}
+
+
+@media screen and (min-width:768px) {
+    header{
+        flex-direction: row;
+        padding: 7px;
+        align-items: center;
+    }
+
+    nav{
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    body{
+        font-size: 15px;
+    }
+
+    .logo img{
+        width: 90%
+    }
+
+    main{
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        align-items: center;
+    }
+
+    #agenda{
+        flex-direction: column;
+    }
+    
+    #servicios{
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .box-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot p{
+        text-align: center;
+    }
+
+    #equipos{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #maps{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:320px) {
+    header{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    body{
+        font-size: 12px;
+    }
+
+    .logo img{
+        width: 60%;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #agenda{
+        flex-direction: column;
+    }
+
+    #servicios{
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .box-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .foot p{
+        text-align: center;
+    }
+    #equipos{
+        flex-direction: column;
+        text-align: center;
+    }
+    #maps{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    
+@media screen and (min-width:1024px) {
+    header{
+        flex-direction: row;
+    }
+    nav{
+        flex-direction: row;
+    }
+    body{
+        font-size: 16px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+    }
+    #agenda{
+        flex-direction: row;
+    }
+    #servicios{
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        padding: 16px;
+        align-items: center;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .box-footer{
+        flex-direction: row;
+        text-align: justify;
+    }
+    .foot p{
+        text-align: center;
+    }
+    #equipos{
+        flex-direction: row;
+    }
+    #maps{
+        flex-direction: row;
+    }
+}
+
+.carousel-item{
+    data-bs-interval:"2s"
+}
